@@ -1,0 +1,23 @@
+# Web 框架
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+
+# 数据库
+sqlalchemy>=2.0.30
+pymysql>=1.1.0
+cryptography>=43.0.0
+
+# 数据验证与配置
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+python-multipart>=0.0.9
+
+# 认证（直接使用 bcrypt 哈希，不再依赖 passlib，兼容 bcrypt 5.x）
+PyJWT>=2.9.0
+bcrypt>=4.0.0
+
+# LLM / Agent / RAG（Python 3.12 适配的新版本，替代文档中的 langgraph 0.0.26 老版本）
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langgraph>=0.2.50
+chromadb>=0.5.0

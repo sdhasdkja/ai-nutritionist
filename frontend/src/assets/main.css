@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 食谱markdown风格展示 */
+.recipe-content h1, .recipe-content h2, .recipe-content h3 {
+  font-weight: bold;
+  color: #1f2937;
+  margin: 1em 0 0.5em;
+}
+.recipe-content h1 { font-size: 1.3em; }
+.recipe-content h2 { font-size: 1.15em; color: #059669; }
+.recipe-content h3 { font-size: 1.05em; }
+.recipe-content ul, .recipe-content ol {
+  padding-left: 1.5em;
+  margin: 0.5em 0;
+  list-style: disc;
+}
+.recipe-content ol { list-style: decimal; }
+.recipe-content li { margin: 0.25em 0; }
+.recipe-content p { margin: 0.5em 0; line-height: 1.7; }
+.recipe-content strong { color: #059669; }
