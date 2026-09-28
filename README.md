@@ -82,14 +82,3 @@ npm run dev
 2. 健康报告页粘贴体检报告文本（如：`空腹血糖 6.8 mmol/L`、`血压 135/88`、`尿酸 460 μmol/L`）
 3. 口味偏好页设置喜好与过敏原
 4. 我的食谱页选择报告 → AI生成（1-3分钟，4个Agent接力+审核回环）
-
-## 与原文档的差异（适配说明）
-
-| 原文档 | 本实现 | 原因 |
-|---|---|---|
-| langgraph 0.0.26 / langchain 0.1.0 | langgraph 0.2+ / langchain 0.3+ | Python 3.12 无法安装老版本 |
-| python-jose | PyJWT | python-jose 已停止维护 |
-| OpenAI GPT-4o-mini | 百炼 qwen-plus | 国内可直连，走已配置的 DASHSCOPE_API_KEY |
-| OpenAIEmbeddings 默认模型 | text-embedding-v3（批量10） | 百炼 embedding 接口批量限制 |
-| 登录JSON/拦截器两处bug | 表单编码/直接返回data | 原文档前后端契约不一致 |
-| 食谱营养数值写死 | 正则从生成结果提取 | 展示更真实 |
